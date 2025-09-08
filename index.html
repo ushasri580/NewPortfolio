@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usha Sri Kalakoti | Aspiring Developer</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/usha.jpg">
+</head>
+<body>
+
+    <!-- Semantic Header with Navigation -->
+    <header class="main-header" id="main-header">
+        <nav class="container main-nav">
+            <a href="#" class="logo">Ushasri</a>
+            <div class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#journey">Journey</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="toggle-label"></label>
+            </div>
+             <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger-menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </nav>
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav-menu" id="mobile-menu">
+            <a href="#skills">Skills</a>
+            <a href="#journey">Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container hero-content">
+                <img src="images/usha.jpg" alt="Usha Sri Kalakoti" id="hero-pic">
+                <h1>Hi, I'm Usha Sri Kalakoti <span class="waving-hand">👋</span></h1>
+                <p class="tagline">A third-year B.Tech student passionate about leveraging AI tools to build innovative web experiences.</p>
+                <div class="hero-actions">
+                    <div class="social-links" id="hero-socials">
+                        <!-- Social links will be injected by JS -->
+                    </div>
+                    <a href="usha_resume.md" target="_blank" class="btn-resume">View My Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p class="section-subtitle">I believe in a strong foundation and am always hungry to learn more. Click on a skill to see my proficiency.</p>
+                <div class="skills-grid" id="skills-container">
+                    <!-- Skills will be injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey/Timeline Section -->
+        <section id="journey">
+            <div class="container">
+                <h2>My Journey So Far</h2>
+                 <p class="section-subtitle">Every step, from my first line of code to my latest project, is part of a story of growth and discovery.</p>
+                <div class="timeline" id="timeline-container">
+                    <!-- Timeline items will be injected by JS -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects Showcase</h2>
+                <p class="section-subtitle">Putting theory into practice. Click on a project to learn more!</p>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                 <p class="section-subtitle">Have a question, an opportunity, or just want to say hi? My inbox is always open.</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <p class="error-message" id="name-error">Name is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        <p class="error-message" id="email-error">A valid email is required.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        <p class="error-message" id="message-error">Message cannot be empty.</p>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <div id="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Project Modal HTML Structure -->
+    <div class="modal-overlay" id="project-modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modal-title">Project Title</h3>
+                <button class="close-modal" id="close-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-image" class="modal-project-image"></div>
+                <div id="modal-tech-stack" class="project-tech-stack"></div>
+                <p id="modal-description"></p>
+                <a href="#" id="modal-link" target="_blank" class="btn-resume" style="margin-top: 20px; display: inline-block;">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Usha Sri Kalakoti. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
